@@ -1,5 +1,6 @@
 name: Dependent Jobs
-
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on: [push]
 jobs:
     setup:
         runs-on: ubuntu-latest

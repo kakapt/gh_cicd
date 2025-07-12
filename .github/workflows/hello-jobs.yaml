@@ -1,0 +1,16 @@
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Build World
+              run: echo "Building world"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Test World
+              run: echo "Testing world"
